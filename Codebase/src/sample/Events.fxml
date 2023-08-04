@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EventsController">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="700.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <TilePane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TilePane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="700.0" fitWidth="1200.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/weddings.png" />
+                                            </image>
+                                        </ImageView>
+                                        <AnchorPane prefHeight="27.0" prefWidth="1200.0">
+                                            <children>
+                                                <HBox fx:id="hBox" layoutX="173.0" prefHeight="65.0" prefWidth="790.0" style="-fx-background-color: #11ffee00;">
+                                                    <children>
+                                                        <Button mnemonicParsing="false" onAction="#HomePaneView" prefHeight="65.0" prefWidth="180.0" style="-fx-background-color: #11ffee00;" text="Home">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="21.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Separator orientation="VERTICAL" prefHeight="60.0" prefWidth="5.0" />
+                                                        <Button mnemonicParsing="false" onAction="#AccPaneView" prefHeight="65.0" prefWidth="206.0" style="-fx-background-color: #11ffee00;" text="Accomodation">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="21.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                                        <Button mnemonicParsing="false" onAction="#EventPaneView" prefHeight="67.0" prefWidth="180.0" style="-fx-background-color: #11ffee00;" text="Events">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="21.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                                        <Button mnemonicParsing="false" onAction="#DinningsPaneView" prefHeight="68.0" prefWidth="180.0" style="-fx-background-color: #11ffee00;" text="Dinnings">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="21.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                                        <Button mnemonicParsing="false" onAction="#ContactPaneView" prefHeight="64.0" prefWidth="180.0" style="-fx-background-color: #11ffee00;" text="Contact Us">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="21.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                                    </children>
+                                                </HBox>
+                                                <Button fx:id="MenuButton" graphicTextGap="6.0" mnemonicParsing="false" onAction="#MenuVeiw" prefHeight="65.0" prefWidth="150.0" style="-fx-background-color: #11ffee00; -fx-text-fill: black;" text="MENU" wrapText="true">
+                                                    <font>
+                                                        <Font name="System Bold" size="25.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <ImageView fitHeight="54.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/img_45818 (1).png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </Button>
+                                                <Button fx:id="MenuClose" graphicTextGap="6.0" mnemonicParsing="false" onAction="#MenuCloseView" prefHeight="65.0" prefWidth="150.0" style="-fx-background-color: #11ffee00; -fx-text-fill: black;" text="MENU" wrapText="true">
+                                                    <font>
+                                                        <Font name="System Bold" size="25.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <ImageView fitHeight="54.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@images/img_45818 (1).png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </Button>
+                                                <Separator layoutX="142.0" layoutY="3.0" orientation="VERTICAL" prefHeight="60.0" prefWidth="0.0" />
+                                                <Button layoutX="1028.0" layoutY="15.0" mnemonicParsing="false" onAction="#BookingPaneView" prefHeight="35.0" prefWidth="118.0" style="-fx-background-color: #11ffee00; -fx-border-color: black;" text="Book Your Stay">
+                                                    <textFill>
+                                                        <LinearGradient endX="1.0" endY="1.0">
+                                                            <stops>
+                                                                <Stop>
+                                                                    <color>
+                                                                        <Color />
+                                                                    </color>
+                                                                </Stop>
+                                                                <Stop offset="1.0">
+                                                                    <color>
+                                                                        <Color red="0.04020467773079872" green="0.5789473652839661" blue="0.21080653369426727" />
+                                                                    </color>
+                                                                </Stop>
+                                                            </stops>
+                                                        </LinearGradient>
+                                                    </textFill>
+                                                    <font>
+                                                        <Font name="System Bold" size="12.0" />
+                                                    </font>
+                                                </Button>
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane fx:id="MenuPane" layoutY="65.0" prefHeight="635.0" prefWidth="400.0" style="-fx-background-color: #11ffee00;">
+                                            <children>
+                                                <VBox layoutY="135.0" prefHeight="500.0" prefWidth="400.0">
+                                                    <children>
+                                                        <Button contentDisplay="TEXT_ONLY" mnemonicParsing="false" onAction="#HomePaneView" prefHeight="59.0" prefWidth="400.0" style="-fx-background-color: #11ffee00;" text="Home">
+                                                            <font>
+                                                                <Font name="Arial Bold" size="21.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Separator prefHeight="13.0" prefWidth="400.0" />
+                                                        <Button mnemonicParsing="false" onAction="#AccPaneView" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #11ffee00;" text="Accommodation">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="21.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Separator prefWidth="200.0" />
+                                                        <Button mnemonicParsing="false" onAction="#EventPaneView" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #11ffee00;" text="Events">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="21.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Separator prefWidth="200.0" />
+                                                        <Button mnemonicParsing="false" onAction="#DinningsPaneView" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #11ffee00;" text="Dinnings">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="21.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Separator prefWidth="200.0" />
+                                                        <Button mnemonicParsing="false" onAction="#ContactPaneView" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #11ffee00;" text="Contact Us">
+                                                            <font>
+                                                                <Font name="System Bold Italic" size="21.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Separator prefWidth="200.0" />
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </AnchorPane>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </TilePane>
+                  <AnchorPane prefHeight="700.0" prefWidth="1200.0">
+                     <children>
+                        <Pane layoutX="70.0" layoutY="122.0" prefHeight="475.0" prefWidth="591.0" style="-fx-background-color: #b2ccd0;">
+                           <children>
+                              <ImageView fitHeight="230.0" fitWidth="230.0" layoutX="28.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/weddings-gallery-2-744x653.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="230.0" fitWidth="290.0" layoutX="28.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/111.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="230.0" fitWidth="230.0" layoutX="327.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Heritance-Kandlama_Weddings-5-3.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="206.0" fitWidth="290.0" layoutX="277.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/OIP (3).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Label layoutX="767.0" layoutY="263.0" prefHeight="23.0" prefWidth="401.0" text="Honour you love with the grandeur it so richly deserves ">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <Label layoutX="860.0" layoutY="86.0" prefHeight="50.0" prefWidth="133.0" text="EVENTS">
+                           <font>
+                              <Font name="System Bold" size="32.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="0.3285714285714286" startX="0.5142857142857142" startY="0.838095238095238">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.1520467847585678" green="0.13304093480110168" blue="0.5131579041481018" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.051546391752577324">
+                                       <color>
+                                          <Color red="0.6256274580955505" green="0.615618884563446" blue="0.8157894611358643" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.10916179418563843" green="0.09551656991243362" blue="0.3684210479259491" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="709.0" layoutY="194.0" prefHeight="37.0" prefWidth="135.0" text="WEDDINGS">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="678.0" layoutY="325.0" prefHeight="21.0" prefWidth="509.0" text="ambiance or this once-in-a-lifetime celebration, with an elegant ballroom,">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Label layoutX="679.0" layoutY="292.0" prefHeight="26.0" prefWidth="481.0" text=" at Hotel pheonix.Our spectacular waterfront hotel creates the perfect ">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Label layoutX="672.0" layoutY="350.0" prefHeight="24.0" prefWidth="485.0" text=" delectable cuisine and personalized attention to detail that is surpassed.">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Button layoutX="813.0" layoutY="444.0" mnemonicParsing="false" onAction="#ContactPaneView" prefHeight="51.0" prefWidth="227.0" style="-fx-border-color: #1a3c80;" text="Contact Us For More Details">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.20815058052539825" green="0.6710526347160339" blue="0.43188658356666565" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.0972222238779068" green="0.4530092477798462" blue="0.5" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                        <TilePane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="678.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/New Project (2) (1).png" />
+                                            </image>
+                                        </ImageView>
+                                        <VBox layoutX="369.0" layoutY="325.0" prefHeight="317.0" prefWidth="329.0">
+                                            <children>
+                                                <Button contentDisplay="TEXT_ONLY" mnemonicParsing="false" onAction="#HomePaneView" prefHeight="59.0" prefWidth="400.0" style="-fx-background-color: #11ffee00;" text="Home" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Bold" size="21.0" />
+                                                    </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#AccPaneView" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #11ffee00;" text="Accommodation" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="21.0" />
+                                                    </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#EventPaneView" prefHeight="60.0" prefWidth="404.0" style="-fx-background-color: #11ffee00;" text="Events" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="21.0" />
+                                                    </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#DinningsPaneView" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #11ffee00;" text="Dinnings" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="21.0" />
+                                                    </font>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#ContactPaneView" prefHeight="60.0" prefWidth="400.0" style="-fx-background-color: #11ffee00;" text="Contact Us" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold Italic" size="21.0" />
+                                                    </font>
+                                                </Button>
+                                            </children>
+                                        </VBox>
+                                        <Separator layoutX="367.0" layoutY="331.0" orientation="VERTICAL" prefHeight="284.0" prefWidth="5.0" />
+                                        <Separator layoutX="714.0" layoutY="337.0" orientation="VERTICAL" prefHeight="284.0" prefWidth="6.0" />
+                                        <Label layoutX="751.0" layoutY="351.0" prefHeight="33.0" prefWidth="253.0" text="Hotel pheonix, Nittambuwa." textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="751.0" layoutY="384.0" text="SriLanka" textFill="#fcfcfc">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="802.0" layoutY="417.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="166.0" style="-fx-background-color: #11ffee00;" text="+94 6622987" textFill="WHITE">
+                                            <graphic>
+                                                <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@images/telephone icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button layoutX="803.0" layoutY="473.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="163.0" style="-fx-background-color: #11ffee00;" text="+94 6622989" textFill="WHITE">
+                                            <graphic>
+                                                <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@images/R (1).png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button layoutX="803.0" layoutY="527.0" mnemonicParsing="false" prefWidth="228.0" style="-fx-background-color: #11ffee00;" text="info@hotelpheonix.com" textFill="WHITE">
+                                            <graphic>
+                                                <ImageView fitHeight="46.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@images/img_386071.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </TilePane>
+                    </children>
+                </TilePane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

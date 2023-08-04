@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BookingController">
+   <children>
+      <Label layoutX="485.0" layoutY="71.0" text="BOOK YOUR STAY">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.75" green="0.0590277761220932" blue="0.34693285822868347" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutX="41.0" layoutY="137.0" prefHeight="530.0" prefWidth="560.0" style="-fx-border-color: #b26f10;">
+         <children>
+            <TextField fx:id="NameField" layoutX="187.0" layoutY="68.0" prefHeight="25.0" prefWidth="334.0" />
+            <Label layoutX="41.0" layoutY="68.0" prefHeight="17.0" prefWidth="75.0" text="NAME">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TelNoField" layoutX="187.0" layoutY="104.0" prefHeight="25.0" prefWidth="334.0" />
+            <Label layoutX="40.0" layoutY="106.0" prefHeight="17.0" prefWidth="64.0" text="TEL.NO">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EmailField" layoutX="187.0" layoutY="141.0" prefHeight="25.0" prefWidth="334.0" />
+            <Label layoutX="39.0" layoutY="143.0" prefHeight="21.0" prefWidth="98.0" text="E-MAIL">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <MenuButton fx:id="AccMenu" layoutX="40.0" layoutY="180.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="481.0" text="ACCOMODATION TYPE">
+              <items>
+                <MenuItem fx:id="Acc1" mnemonicParsing="false" onAction="#Acc1Select" text="SUPERIOR ROOM" />
+                <MenuItem fx:id="Acc2" mnemonicParsing="false" onAction="#Acc2Select" text="DELUXE ROOM" />
+                  <MenuItem fx:id="Acc3" mnemonicParsing="false" onAction="#Acc3Select" text="LUXURY ROOM" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="AdultsMenu" layoutX="41.0" layoutY="238.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="232.0" text="NO OF ADULTS">
+              <items>
+                <MenuItem fx:id="Adults1" mnemonicParsing="false" onAction="#Adult1Select" text="ADULTS 01" />
+                <MenuItem fx:id="Adults2" mnemonicParsing="false" onAction="#Adult2Select" text="ADULTS 02" />
+                  <MenuItem fx:id="Adults3" mnemonicParsing="false" onAction="#Adult3Select" text="ADULTS 03" />
+                  <MenuItem fx:id="Adults4" mnemonicParsing="false" onAction="#Adult4Select" text="ADULTS 04" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="ChildMenu" layoutX="289.0" layoutY="238.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="232.0" text="NO.OF CHILDREN ( 3 to 12 years)">
+               <items>
+                  <MenuItem fx:id="Child1" mnemonicParsing="false" onAction="#Child1Select" text="01" />
+                  <MenuItem fx:id="Child2" mnemonicParsing="false" onAction="#Child2Select" text="02" />
+                  <MenuItem fx:id="Child3" mnemonicParsing="false" onAction="#Child3Select" text="03" />
+                  <MenuItem fx:id="Child4" mnemonicParsing="false" onAction="#Child4Select" text="04" />
+               </items>
+            </MenuButton>
+            <MenuButton fx:id="DaysMenu" layoutX="41.0" layoutY="302.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="232.0" text="NO.OF DAYS">
+              <items>
+                <MenuItem fx:id="Day1" mnemonicParsing="false" onAction="#Day1Select" text="1 T0 5 DAYS" />
+                <MenuItem fx:id="Day2" mnemonicParsing="false" onAction="#Day2Select" text="1 TO 10 DAYS" />
+                  <MenuItem fx:id="Day3" mnemonicParsing="false" onAction="#Day3Select" text="10 TO 30 DAYS" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="RoomsMenu" layoutX="289.0" layoutY="302.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="232.0" text="NO.OF ROOMS">
+              <items>
+                <MenuItem fx:id="Room1" mnemonicParsing="false" onAction="#Room1Select" text="1 ROOM" />
+                <MenuItem fx:id="Room2" mnemonicParsing="false" onAction="#Room2Select" text="2 ROOMS" />
+                  <MenuItem fx:id="Room3" mnemonicParsing="false" onAction="#Room3Select" text="3 ROOMS" />
+              </items>
+            </MenuButton>
+            <DatePicker fx:id="CheckIn" layoutX="207.0" layoutY="364.0" prefHeight="25.0" prefWidth="164.0" />
+            <Label layoutX="94.0" layoutY="368.0" text="CHECK - IN">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="CheckOut" layoutX="207.0" layoutY="408.0" prefHeight="25.0" prefWidth="164.0" />
+            <Label layoutX="88.0" layoutY="410.0" text="CHECK - OUT">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="124.0" layoutY="462.0" mnemonicParsing="false" onAction="#balance" prefHeight="47.0" prefWidth="149.0" style="-fx-background-color: #b26f10;" text="YOUR BALANCE" textFill="#fcfbfa">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="289.0" layoutY="462.0" mnemonicParsing="false" onAction="#Book" prefHeight="47.0" prefWidth="149.0" style="-fx-background-color: #b26f10;" text="BOOK NOW" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="622.0" layoutY="137.0" prefHeight="205.0" prefWidth="535.0" style="-fx-border-color: #b26f10;">
+         <children>
+            <Label alignment="CENTER" layoutX="25.0" layoutY="39.0" prefHeight="17.0" prefWidth="481.0" text="ENTER YOUR RESERVATION ID BELOW.">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Id" layoutX="186.0" layoutY="88.0" prefHeight="30.0" prefWidth="164.0" />
+            <Button layoutX="68.0" layoutY="138.0" mnemonicParsing="false" onAction="#View" prefHeight="39.0" prefWidth="190.0" style="-fx-background-color: #b26f10;" text="VIEW RESERVATIONS" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="268.0" layoutY="138.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="39.0" prefWidth="190.0" style="-fx-background-color: #b26f10;" text="CANCEL RESERVATIONS" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="BalancePane" layoutX="622.0" layoutY="360.0" prefHeight="259.0" prefWidth="535.0" style="-fx-border-color: #b26f10;">
+         <children>
+            <Label fx:id="Balance" layoutX="29.0" layoutY="48.0" prefHeight="53.0" prefWidth="461.0" text=" YOUR TOTAL BALANCE IS :     ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameL" layoutX="29.0" layoutY="55.0" text="NAME :  ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailL" layoutX="27.0" layoutY="91.0" text="EMAIL :   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="telNoL" layoutX="288.0" layoutY="91.0" text="TEL.NO :   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="accL" layoutX="27.0" layoutY="120.0" text="ACCOMODATION TYPE :  ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="idL" layoutX="29.0" layoutY="22.0" text="RESERVATION ID :   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="daysL" layoutX="286.0" layoutY="179.0" text="NO.OF DAYS  : ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="childrenL" layoutX="288.0" layoutY="150.0" text="NO.OF CHILDREN :  ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="roomsL" layoutX="26.0" layoutY="179.0" text="NO.OF ROOMS :   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="checkOutL" layoutX="286.0" layoutY="208.0" text="CHECK- OUT :  ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="checkInL" layoutX="26.0" layoutY="208.0" text="CHECK - IN :  ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="adultsL" layoutX="28.0" layoutY="150.0" text="NO.OF ADULTS :  ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="430.0" layoutY="20.0" mnemonicParsing="false" onAction="#CLEAR" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: #b26f10;" text="CLEAR" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="622.0" layoutY="623.0" mnemonicParsing="false" onAction="#ContactPaneView" prefHeight="39.0" prefWidth="535.0" style="-fx-background-color: #b26f10;" text="CONTACT US FOR MORE DETAILS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="993.0" layoutY="64.0" mnemonicParsing="false" onAction="#HomePaneView" prefHeight="53.0" prefWidth="164.0" style="-fx-background-color: #b26f10;" text="BACK" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
